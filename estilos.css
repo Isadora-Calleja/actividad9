@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Radio+Canada&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Koulen', cursive;
+}
+
+header{
+    text-align: center;
+    background: hsl(135, 57%, 55%) ;
+    color: rgb(24, 23, 23);
+    padding: 10px 0;
+}
+
+.container{
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+section{
+    border: 2px solid #121414 ;
+    border-radius: 7x;
+    padding: 10px;
+    margin: 12px 0;
+}
+
+label{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    margin-bottom: 3px;
+}
+
+label:hover{
+    background: #a0f0c4;
+}
+
+button{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+
+    background-color: #db69b9 ;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover{
+    background: #000;
+    color: #fff;
+    transition: all .3s;
+    transform: scale(1.1);
+}
+
+h2{
+    text-align: center;
+}
+
+#resultado{
+    font-size: 30px;
+    color: #151718 ;
+}

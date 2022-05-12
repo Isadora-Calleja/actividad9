@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>QUIZ GAME</h1>
+            <p>Preguntas de Opción Múltiples</p>
+        </header>
+
+        <div class="container">
+            <section id="p0">
+                 <h3>1-¿La capital de México es?</h3>
+                <label>
+                    <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> Zúrich
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p0" onclick="respuesta(0,this)" > El cabo
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> México
+                </label>
+            </section>
+
+            <section id="p1">
+                <h3>2-¿Quién fue el primer gobernante del México independiente?</h3>
+               <label>
+                   <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> Agustín de Iturbide.
+               </label>
+               <label>
+                   <input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> Francisco I madero.
+               </label>
+               <label>
+                   <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> Guadalupe Victoria.
+               </label>
+           </section>
+           <section id="p2">
+                 <h3>3-¿Cuánto es 8×8?</h3>
+                <label>
+                    <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> 64
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> 32
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> 56
+                </label>
+            </section>
+
+            <section id="p3">
+                <h3>4-¿Cuantos planetas hay en el sistema solar??</h3>
+               <label>
+                   <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> 8
+               </label>
+               <label>
+                   <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> 10
+               </label>
+               <label>
+                   <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> 11
+               </label>
+           </section>
+
+           <section id="p4">
+                 <h3>5-¿La capital de Brasil es?</h3>
+                <label>
+                    <input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> Brasilia
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> Copacabana
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> Maracaibo
+                </label>
+            </section>
+
+            <section id="p5">
+                <h3>6-¿Cuantos continentes hay?</h3>
+               <label>
+                   <input type="radio" value="1" name="p5" onclick="respuesta(5,this)"> Cinco
+               </label>
+               <label>
+                   <input type="radio" value="2" name="p5" onclick="respuesta(5,this)"> Seis
+               </label>
+               <label>
+                   <input type="radio" value="3" name="p5" onclick="respuesta(5,this)"> Siete
+               </label>
+           </section>
+
+           <section id="p6">
+                 <h3>7-¿África, América, Antártida, Asia, Europa, y Oceanía son?</h3>
+                <label>
+                    <input type="radio" value="1" name="p6" onclick="respuesta(6,this)"> Países
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p6" onclick="respuesta(6,this)"> Continentes
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p6" onclick="respuesta(6,this)"> Estados/provincias
+                </label>
+            </section>
+
+            <section id="p7">
+                 <h3>8-¿Cuál es el país más extenso territorialmente?</h3>
+                <label>
+                    <input type="radio" value="1" name="p7" onclick="respuesta(7,this)"> Rusia
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p7" onclick="respuesta(7,this)"> Canadá
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p7" onclick="respuesta(7,this)"> Noruega
+                </label>
+            </section>
+
+            <section id="p8">
+                 <h3>9-¿Cuál es el país territorialmente más pequeño?</h3>
+                <label>
+                    <input type="radio" value="1" name="p8" onclick="respuesta(8,this)"> Enemigos de Yoda
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p8" onclick="respuesta(8,this)"> Italia
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p8" onclick="respuesta(8,this)"> El vaticano
+                </label>
+            </section>
+
+            <section id="p9">
+                 <h3>10-¿Cuál es el continente más austral?</h3>
+                <label>
+                    <input type="radio" value="1" name="p9" onclick="respuesta(9,this)"> Asia
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p9" onclick="respuesta(9,this)"> Oceanía
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p9" onclick="respuesta(9,this)"> Antártida
+                </label>
+            </section>
+
+            <button onclick="corregir()">CORREGIR</button>
+            <h2>Cantidad acertada: <span id="resultado"></span></h2>  
+        </div>
+
+        <script src="script.js"></script>
+        
+
+    </body>
+
+</html>
